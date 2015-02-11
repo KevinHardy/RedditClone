@@ -1,6 +1,6 @@
 var app = angular.module('redditclone');//referencing app module
 
-app.controller('PostController', function($scope) {
+app.controller('PostController', function($scope, mainService) {
 	//$scope.test = "Welcome to Kevin's Reddit Clone!";
 	$scope.posts = [];
 
@@ -31,5 +31,12 @@ app.controller('PostController', function($scope) {
 		$scope.posts[index].comments.push(comment);
 		$scope.posts[index].commentForm = '';
 	}
+
+	//this is new stuff for the service file
+	/*var getData = function() {
+		$scope.posts = mainService.getData();
+	}
+
+	getData();*/
 
 });
