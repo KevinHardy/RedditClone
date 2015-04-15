@@ -1,6 +1,6 @@
 var app = angular.module('redditclone');//referencing app module
 
-app.controller('PostController', function($scope, mainService) {
+app.controller('PostController', function($scope) {
 	//$scope.test = "Welcome to Kevin's Reddit Clone!";
 	$scope.posts = [];
 
